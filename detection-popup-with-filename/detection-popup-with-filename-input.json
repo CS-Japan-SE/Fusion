@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "File" : {
+      "type": "string",
+      "format": "localFilePath",
+      "ui:component": "select"
+    }
+  },
+  "required": [
+    "File"
+  ],
+  "type": "object"
+}
