@@ -7,3 +7,4 @@ Windows向けです（PopwershellスクリプトをRTRで実行する形にな�
 ## 設定手順
 
 こちらを参考
+https://github.com/CS-Japan-SE/Fusion/tree/main/detection-popup-with-filename
