@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "File" : {
+      "type": "string",
+      "format": "localFilePath",
+      "ui:component": "select"
+    },
+    "Hash" : {
+      "type": "string",
+      "format": "sha256",
+      "ui:component": "select"
+    }
+  },
+  "required": [
+    "File",
+    "Hash"
+  ],
+  "type": "object"
+}
