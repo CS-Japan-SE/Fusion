@@ -36,7 +36,7 @@ return response;
 }
 "@
 if (!([System.Management.Automation.PSTypeName]'WTSMessage').Type) { Add-Type -TypeDefinition $Def }
-$Out = ps -IncludeUserName | ? { $_.SessionId -ne 0 } | select SessionId, UserName | sort -Unique | % {
+ps -IncludeUserName | ? { $_.SessionId -ne 0 } | select SessionId, UserName | sort -Unique | % {
     $Result = if ($_.SessionId) {
         [WTSMessage]::SendMessage($_.SessionId,'CrowdStrike Falcon',$Message,0,0x00000040L)
     } else {
@@ -44,4 +44,3 @@ $Out = ps -IncludeUserName | ? { $_.SessionId -ne 0 } | select SessionId, UserNa
     }
     [PSCustomObject] @{ Username = $_.UserName; Message  = if ($Result -eq 1) { $Param.Message } else { $Result }}
 }
-output $Out $Param "send_message.ps1"
