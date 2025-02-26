@@ -1,0 +1,13 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "properties": {
+      "Tags" : {
+        "type": "string",
+        "ui:component": "select"
+      }
+    },
+    "required": [
+      "Tags"
+    ],
+    "type": "object"
+  }
