@@ -8,8 +8,6 @@ Fusionワークフロー（オンデマンド トリガー）を用いて、特�
 
 ## 手順
 
-Work In Progress
-
 ### 1. API クライアントの作成
 
 「サポートおよびリソース >> APIクライアントおよびキー」
@@ -29,7 +27,9 @@ Sensor Update Policies の [書き込み] にチェックをいれて API クレ
 <img width="819" alt="image" src="https://github.com/user-attachments/assets/40099b98-1223-498a-b646-dad1e58875d8" />
 
 
-[input-json.json] を入力スキーマに入力
+入力スキーマタブに移動して[input-json.json] の内容を入力
+
+![image](https://github.com/user-attachments/assets/42f85b4d-3cd5-4931-ad70-6ba23e9bb1a4)
 
 この時点で、RTRとして本スクリプトは利用可能。Fusionワークフローの活用例として 3. で後続の手順を実施する
 
